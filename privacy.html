@@ -46,11 +46,11 @@
 </ul>
 
 <h2>Sync and your account (optional)</h2>
-<p>Strio works fully without an account. If you sign in, Strio keeps a copy of your habits on a server so that your devices stay in step. Signing in uses only your email address; a six-digit code is sent to it, and no password is created.</p>
+<p>Strio works fully without an account. If you sign in, Strio keeps a copy of your habits on a server so that your devices stay in step. You can sign in with a six-digit code sent to your email address, with no password created, or on Android with your Google account. With Google, Strio receives from Google only your email address and an identifier for your Google account, which the sync server uses to recognise you; it does not receive your name, contacts, or anything else from Google, and Google is not told what you track.</p>
 <p>What is synced:</p>
 <table>
 <tr><th>Data</th><th>Details</th></tr>
-<tr><td>Email address</td><td>To identify your account and send sign-in codes.</td></tr>
+<tr><td>Email address</td><td>To identify your account and send sign-in codes. If you sign in with Google, also the identifier Google gives your account.</td></tr>
 <tr><td>Habits</td><td>Name, icon, colour, category, schedule, start of day, the health rule (the rule only, such as "sleep between 7 and 9 hours", never any reading), sort order, and timestamps.</td></tr>
 <tr><td>Completions</td><td>Which habit, which day, whether it was ticked by you or by a health rule, and when.</td></tr>
 <tr><td>Pauses</td><td>Which habit, the days, the optional reason you typed, and when.</td></tr>
@@ -69,7 +69,7 @@
 <ul>
 <li>No advertising, no analytics, no crash reporting, no tracking of any kind.</li>
 <li>No selling, renting or sharing of personal data.</li>
-<li>No third-party code beyond the platform libraries needed to read health data and the client library for the sync server.</li>
+<li>No third-party code beyond the platform libraries needed to read health data, Google's sign-in library, and the client library for the sync server.</li>
 </ul>
 <p>One technical note: while the app has few users, an automated request is made to the server every few days so that the hosting provider does not pause it. That request carries no user data and reads none.</p>
 
