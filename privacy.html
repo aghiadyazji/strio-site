@@ -4,11 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Strio — Privacy policy</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f3f5f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121614" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<header class="site"><span class="mark"><i></i><i></i><i></i><i></i></span><a href="index.html">Strio</a><nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></header>
+<header class="site"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><a href="index.html">Strio</a><nav><a href="privacy.html" aria-current="page">Privacy</a><a href="support.html">Support</a></nav></header>
 <h1>Privacy policy</h1>
 <p class="meta">Effective 18 November 2026. Applies to the Strio app for iPhone, Android and Mac.</p>
 
@@ -48,13 +52,13 @@
 <h2>Sync and your account (optional)</h2>
 <p>Strio works fully without an account. If you sign in, Strio keeps a copy of your habits on a server so that your devices stay in step. You can sign in with a six-digit code sent to your email address, with no password created, or on Android with your Google account. With Google, the sync server receives from Google your email address, an identifier for your Google account, your name and a link to your Google profile picture, and keeps them with your account. Strio uses the email address and the identifier to recognise you; it does not use or show the name or picture. Strio receives nothing else from Google, such as your contacts, and Google is not told what you track. If you already have an account with the same email address, signing in with Google opens that account rather than a new one.</p>
 <p>What is synced:</p>
-<table>
+<div class="table-wrap"><table>
 <tr><th>Data</th><th>Details</th></tr>
 <tr><td>Email address</td><td>To identify your account and send sign-in codes. If you sign in with Google, also the identifier, name and profile picture link Google sends, kept by the sign-in service and deleted with your account.</td></tr>
 <tr><td>Habits</td><td>Name, icon, colour, category, schedule, start of day, the health rule (the rule only, such as "sleep between 7 and 9 hours", never any reading), sort order, and timestamps.</td></tr>
 <tr><td>Completions</td><td>Which habit, which day, whether it was ticked by you or by a health rule, and when.</td></tr>
 <tr><td>Pauses</td><td>Which habit, the days, the optional reason you typed, and when.</td></tr>
-</table>
+</table></div>
 <p>Reminder times and whether you have seen the introduction stay on each device and are not synced.</p>
 <p>The server is run on <a href="https://supabase.com">Supabase</a>, hosted in the European Union (Paris). Supabase processes the data on our behalf under its data processing terms. Sign-in emails are delivered through a transactional email provider that sees only your address and the code.</p>
 <p>Your data is kept for as long as your account exists. <strong>Settings → Delete account</strong> removes your account and every record under it immediately. The copy on your phone stays until you delete the app.</p>
