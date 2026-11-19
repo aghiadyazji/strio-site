@@ -16,10 +16,6 @@
   --muted: #5c6660;
   --accent: #3e6b57;
   --rule: #dce1dc;
-  --stripe-1: #4f8069;
-  --stripe-2: #357a7d;
-  --stripe-3: #46709f;
-  --stripe-4: #a48245;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -30,10 +26,6 @@
     --muted: #94a09a;
     --accent: #7fb89c;
     --rule: #2a312d;
-    --stripe-1: #7fb89c;
-    --stripe-2: #6db4b6;
-    --stripe-3: #86aad8;
-    --stripe-4: #d4b47a;
   }
 }
 * { box-sizing: border-box; }
@@ -64,12 +56,8 @@ header.site > a { font-weight: 700; font-size: 1.1rem; letter-spacing: -.01em; }
 header.site nav { margin-left: auto; display: flex; gap: 1.4rem; }
 header.site nav a { color: var(--muted); font-weight: 600; font-size: .92rem; }
 header.site nav a:hover, header.site nav a[aria-current] { color: var(--text); }
-.mark { display: inline-grid; gap: 3px; width: 26px; }
-.mark i { display: block; height: 4px; border-radius: 2px; }
-.mark i:nth-child(1) { width: 100%; background: var(--stripe-1); }
-.mark i:nth-child(2) { width: 72%;  background: var(--stripe-2); }
-.mark i:nth-child(3) { width: 100%; background: var(--stripe-3); }
-.mark i:nth-child(4) { width: 50%;  background: var(--stripe-4); }
+/* The app icon itself, the week ring (favicon.svg carries its own corners). */
+.mark { display: block; width: 28px; height: 28px; flex: none; }
 h1 {
   font-size: 2.1rem;
   line-height: 1.15;
